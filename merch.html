@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rocker label</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<!-- Header -->
+<div class="bgded" style="background-image:url('../images/backgrounds/fon.jpg');"> 
+  <div class="wrapper overlay">
+    <header id="header" class="hoc clear">
+      <nav id="mainav" class="clear"> 
+        <ul class="clear">
+          <li ><a href="/index.html">О группе</a></li>
+          <li class="active"><a class="drop" href="pages\merch.html">Мерч</a>
+            <ul>
+              <li><a href="futbolk.html">Футболки</a></li>
+              <li><a href="flash.html">Акссесуары</a></li>
+              <li><a href="nashivki.html">Нашивки</a></li>
+            </ul>
+          </li>
+           <li><a href="/miniblog.html">Миниблог</a></li>
+          <li><a href="/pages/concert.html">Билеты </a></li>
+          <li><a href="err404.html">Контакты</a></li>
+          <li><a href="/secret.html">Секретные данные</a></li>
+          <div class="toggle-container">
+            <label class="switch">
+              <input type="checkbox" onclick="toggleColor()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </ul>
+
+      </nav>
+      <div id="logo"> 
+        <h1><a href="/index.html">Rocker Label</a></h1>
+
+      </div>
+    </header>
+  </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+
+<script>
+function toggleColor() {
+  const divs = document.querySelectorAll('.color');
+  const body = document.body;
+  const listItems = document.querySelectorAll('ul.nospace.clear li');
+
+  // Определяем текущий цвет body
+  const bodyCurrentColor = window.getComputedStyle(body).backgroundColor;
+
+  // Определяем новый цвет в зависимости от текущего цвета
+  const newColor = bodyCurrentColor === 'rgb(255, 255, 255)' ? '#000000' : '#FFFFFF';
+
+  // Устанавливаем новый цвет для body
+  body.style.backgroundColor = newColor;
+
+  // Устанавливаем новый цвет для div-ов
+  divs.forEach(div => {
+    div.style.backgroundColor = newColor;
+  });
+
+  // Переключаем цвет границ для элементов списка
+  listItems.forEach(item => {
+    item.style.borderColor = newColor === '#000000' ? 'white' : 'black';
+  });
+}
+</script>
+
+<!-- колонка с мерчом   -->
+<div class="wrapper row3 color" >
+  <main class="hoc container clear"> 
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Купите наш мерч</header>
+          <Style>
+/* Общие стили */
+ul.nospace.clear {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.nospace.clear li {
+    box-sizing: border-box;
+    padding: 10px;
+    flex: 1 1 22%; /* Адаптивная ширина для каждой четверти */
+    max-width: 22%;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+ul.nospace.clear li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul.nospace.clear li a.btn.medium {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #e90000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Медиазапросы */
+@media (max-width: 1200px) {
+    ul.nospace.clear li {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    ul.nospace.clear li {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    ul.nospace.clear li a.btn.medium {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    ul.nospace.clear li a.btn.medium {
+        width: 90%;
+    }
+}
+
+/* Изменение цвета кнопки при наведении */
+ul.nospace.clear li a.btn.medium:hover {
+    background-color: #000000; /* Новый цвет кнопки при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+          </Style>
+          <ul class="nospace clear">
+            <li class="one_quarter first"><a href="err404.html"><img src="../images/gallery/01.jpg" alt="" >Подвеска - 1000 денег  <br><a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/02.jpg" alt="">Футболка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/03.jpg" alt="">Медиатор - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/04.jpg" alt="">Футболка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter first"><a href="err404.html"><img src="../images/gallery/05.jpg" alt="">Медиатор - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/06.jpg" alt="">Футболка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/07.jpg" alt="">Флешка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/08.jpg" alt="">Вонучка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter first"><a href="err404.html"><img src="../images/gallery/09.jpg" alt="">Шапка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/10.jpg" alt="">Нашивка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/11.jpg" alt="">Нашивка - 1000 денег <br> <a class="btn medium" href="#">Купить</a></a></li>
+            <li class="one_quarter"><a href="err404.html"><img src="../images/gallery/12.jpg" alt="">Наклейка - 1000 денег<br><a class="btn medium" href="#">Купить</a></a></li>
+        </ul>
+          <figcaption>Спасибо что остаётесь с нами</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+
+
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_quarter first">
+      <h6 class="title">Сотрудничество </h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-envelope-o"></i> Spectral15@gmail.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Слушай нас </h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Яндекс Музыка</a></li>
+        <li><a href="#">YouTube Music</a></li>
+        <li><a href="#">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Подписывайся</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Инстаграмм</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Вконтакте</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">© 2024 Rocker Label</h6>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
